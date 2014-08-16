@@ -1,3 +1,5 @@
+DOWNLOAD = TRUE
+VERBOSE= TRUE
 ###############################################################################
 ## FUNCTION     loadactivitydata
 ##
@@ -139,10 +141,9 @@ loadactivitydata <- function(path="~/Dev/Coursera/cleaning/GetCleanData-Project/
     data
 }
 
-## load the data using the loadactivity function define above. We'll set the
-## function to run in verbose mode and to download the file to demonstrate the
-## functionality
-data <- loadactivitydata(verbose=TRUE,DL=FALSE)
+## load the data using the loadactivity function defined above. Options are set
+## here by global variables set at the top of the script.
+data <- loadactivitydata(verbose=VERBOSE,DL=DOWNLOAD)
 
 ## subset the data using a regular expression that evaluates the variable header
 ## names for partial matches to any one of the following strings: 'mean','std',
