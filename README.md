@@ -1,6 +1,6 @@
 ## README for run_analysis.R
 
-###REQUIREMENTS:
+###REQUIREMENTS
 - reshape2 R library
 - One of the following:
 	- The full Human Activity Recognition Using Smartphones Data Set located in the working directory as originally provided
